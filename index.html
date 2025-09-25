@@ -4,6 +4,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>えんえんトンネル 延長距離シミュレーター</title>
+
+
 <style>
   body{font-family:sans-serif;background:#0f1724;color:#fff;padding:18px;}
   .wrap{display:flex;gap:18px;align-items:flex-start;}
@@ -20,6 +22,27 @@
   .neutral{background:#374151;}
   .info{background:#0ea5a4;}
   .history{max-height:420px;overflow:auto;background:#0b1220;padding:8px;border-radius:6px;}
+/* スマホ・タブレット用 */
+@media (max-width: 768px) {
+  .wrap {
+    flex-direction: column; /* 縦並びに切り替え */
+  }
+  .panel {
+    width: 100% !important; /* スマホ幅に合わせる */
+    margin-bottom: 12px;
+  }
+  .large {
+    font-size: 20px; /* 見やすい大きさに */
+  }
+  button {
+    width: 100%; /* ボタンは横幅いっぱい */
+  }
+  .controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
 </style>
 </head>
 <body>
